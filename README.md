@@ -1,4 +1,18 @@
+#Summary 
+
+- [automount](#section-id-1)
+  - [Overview](#section-id-3)
+  - [Prerequisites](#section-id-15)
+  - [Examples](#section-id-19)
+    - [Example 1](#section-id-21)
+    - [Example 2](#section-id-48)
+  - [ToDos](#section-id-88)
+
+<div id='section-id-1'/>
+
 # automount
+
+<div id='section-id-3'/>
 
 ## Overview
 
@@ -12,11 +26,17 @@ where ```<BaseDirectoryOnLocalMachine>``` refers to the base directory on the lo
 
 The script looks for leaf folders under each of the hostname directories listed above and mounts the same path from that hostname.
 
+<div id='section-id-15'/>
+
 ## Prerequisites
 
 You need [```sshfs```](https://github.com/osxfuse/sshfs) installed.
 
+<div id='section-id-19'/>
+
 ## Examples
+
+<div id='section-id-21'/>
 
 ### Example 1
 
@@ -44,6 +64,8 @@ $ umount /A/B/HostName_1/EE
 $ mount ${USER}@HostName_1:/EE /A/B/HostName_1/EE
 
 ```
+
+<div id='section-id-48'/>
 
 ### Example 2
 
@@ -85,7 +107,9 @@ $ mount ${USER}@HostName_4:/DD/DDA/DDAA /A/B/HostName_4/DD/DDA/DDAA
 
 ```
 
-## ToDo
+<div id='section-id-88'/>
+
+## ToDos
 
 1. Add documentation about the remote prefix file.
 2. Add documentation about the ```DEBUG_``` variable.
