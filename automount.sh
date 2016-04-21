@@ -82,15 +82,3 @@ function main()
 }
 
 main "$@"
-exit
-
-umount /Users/vakh/sshfs/daansi.mtv/work/chrome/src/chrome \
-  /Users/vakh/sshfs/daansi.mtv/work/chrome/src/components || [ $? -eq 1 ]
-
-sshfs vakh@daansi.mtv:/usr/local/google/home/vakh/work/chrome/src/chrome \
-/Users/vakh/sshfs/daansi.mtv/work/chrome/src/chrome \
--oauto_cache,reconnect,defer_permissions,noappledouble,volname=LOCALVOLUMENAME,workaround=rename
-
-sshfs vakh@daansi.mtv:/usr/local/google/home/vakh/work/chrome/src/components \
-/Users/vakh/sshfs/daansi.mtv/work/chrome/src/components \
--oauto_cache,reconnect,defer_permissions,noappledouble,volname=LOCALVOLUMENAME,workaround=rename
