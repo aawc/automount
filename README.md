@@ -1,6 +1,6 @@
 #Summary 
 
-- [automount](#section-id-1)
+- [mirror-mount](#section-id-1)
   - [Overview](#section-id-3)
   - [Prerequisites](#section-id-15)
   - [Examples](#section-id-19)
@@ -10,7 +10,7 @@
 
 <div id='section-id-1'/>
 
-# automount
+# mirror-mount
 
 <div id='section-id-3'/>
 
@@ -19,7 +19,7 @@
 I wrote this simple script to automate the mounting of directories from one of more remote machines. It deduces the directories to mount from the remote machine by looking at the directory structore on the local machine.
 
 ```
-automount.sh <BaseDirectoryOnLocalMachine>
+mirror-mount.sh <BaseDirectoryOnLocalMachine>
 ```
 
 where ```<BaseDirectoryOnLocalMachine>``` refers to the base directory on the local machine that contains sub-directories with names such as ```<HostName1>```, ```<HostName2>```, ```<HostName3>```.
@@ -52,7 +52,7 @@ Let's assume that the following directory structure exists on the local machine:
 ```
 
 ```
-$ automount.sh /A/B/
+$ mirror-mount.sh /A/B/
 ```
 Invoking ```autmount.sh``` like that leads to the following commands getting executed:
 
@@ -87,7 +87,7 @@ Let's assume that the following directory structure exists on the local machine:
 ```
 
 ```
-$ automount.sh /A/B/
+$ mirror-mount.sh /A/B/
 ```
 Invoking ```autmount.sh``` like that leads to the following commands getting executed:
 
